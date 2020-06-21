@@ -1,9 +1,11 @@
+import java.io.IOException;
+
 public class Main {
 
-  public static void main(String[] args) {
+  private static final String WEATHER = "https://www.gismeteo.ru/";
 
-
-
-
+  public static void main(String[] args) throws IOException {
+      Weather weather = new Weather(WEATHER);
+      weather.weatherFromSite();
   }
 }
